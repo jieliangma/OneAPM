@@ -8,10 +8,13 @@
 
 @import UIKit;
 #import "BLAppDelegate.h"
+#import "OneAPM/OneAPM.h"
 
 int main(int argc, char * argv[])
 {
     @autoreleasepool {
+        [OneAPM startWithApplicationToken:@"token get from www.oneapm.com"];
+        
         return UIApplicationMain(argc, argv, nil, NSStringFromClass([BLAppDelegate class]));
     }
 }
