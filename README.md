@@ -7,9 +7,25 @@
 
 ## Usage
 
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
+Add some codes in your main.m file like this:
+
+```ruby
+#import "AppDelegate.h"
+#import "OneAPM/OneAPM.h"
+
+int main(int argc, char * argv[]) {
+    @autoreleasepool {
+    	[OneAPM startWithApplicationToken:@"token_string_get_from_oneapm"];
+
+        return UIApplicationMain(argc, argv, nil, NSStringFromClass([AppDelegate class]));
+    }
+}
+
+```
 
 ## Requirements
+
+Minimum iOS Target: 6.0
 
 ## Installation
 
