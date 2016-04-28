@@ -3,6 +3,5 @@ language: objective-c
 before_install:
     - gem install cocoapods --quiet
     - pod lib lint
-#    - pod install --project-directory=Example/OneAPM-Example
 script:
     - xctool -workspace Example/OneAPM-Example.xcworkspace -scheme OneAPM-Example -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO
