@@ -6,7 +6,7 @@ s.description      = <<-DESC
 						OneAPM library for iOS, Supports iPhone Simulator (i386), armv7, armv7s.
 						DESC
 
-s.homepage         = "http://www.oneapm.com"
+s.homepage         = "https://www.oneapm.com"
 s.license          = 'MIT'
 s.author           = { "JieLiang Ma" => "majieliang@oneapm.com" }
 s.source           = { :git => "https://github.com/jieliangma/OneAPM.git", :tag => s.version.to_s }
