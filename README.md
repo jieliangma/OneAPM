@@ -10,15 +10,15 @@
 Add some codes in your main.m file like this:
 
 ```ruby
-#import "AppDelegate.h"
+#import "BLAppDelegate.h"
 #import "OneAPM/OneAPM.h"
 
 int main(int argc, char * argv[]) {
-    @autoreleasepool {
-    	[OneAPM startWithApplicationToken:@"token_string_get_from_oneapm"];
+@autoreleasepool {
+[OneAPM startWithApplicationToken:@"token_string_get_from_oneapm"];
 
-        return UIApplicationMain(argc, argv, nil, NSStringFromClass([AppDelegate class]));
-    }
+return UIApplicationMain(argc, argv, nil, NSStringFromClass([AppDelegate class]));
+}
 }
 
 ```

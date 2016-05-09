@@ -2,7 +2,7 @@
 //  main.m
 //  OneAPM
 //
-//  Created by JieLiang Ma on 04/08/2016.
+//  Created by JieLiang Ma on 05/09/2016.
 //  Copyright (c) 2016 JieLiang Ma. All rights reserved.
 //
 
@@ -13,7 +13,7 @@
 int main(int argc, char * argv[])
 {
     @autoreleasepool {
-        [OneAPM startWithApplicationToken:@"token get from www.oneapm.com"];
+        [OneAPM startWithApplicationToken:@"token_string_get_from_oneapm"];
         
         return UIApplicationMain(argc, argv, nil, NSStringFromClass([BLAppDelegate class]));
     }
