@@ -2,12 +2,13 @@ platform :ios, '9.0'
 inhibit_all_warnings!
 
 xcodeproj 'OneAPM'
+#use_frameworks!
 
 target 'OneAPM_Example' do
   pod 'OneAPM', :path => '../'
 end
 
 target 'OneAPM_Tests' do
-  pod 'FBSnapshotTestCase/Core'
+#  pod 'FBSnapshotTestCase/Core'
   pod 'OneAPM', :path => '../'
 end
