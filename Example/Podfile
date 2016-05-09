@@ -8,5 +8,6 @@ target 'OneAPM_Example' do
 end
 
 target 'OneAPM_Tests' do
+  pod 'FBSnapshotTestCase/Core'
   pod 'OneAPM', :path => '../'
 end
