@@ -10,12 +10,12 @@
 
 @interface OneAPM : NSObject
 
-    /******************************************************************************
-     * Function: + (void)startWithApplicationToken:(NSString *)token
-     * Parameters:
-     *  token:
-     *       the token string got from www.OneAPM.com
-     ******************************************************************************/
+/******************************************************************************
+ * Function: + (void)startWithApplicationToken:(NSString *)token
+ * Parameters:
+ *  token:
+ *       the token string got from www.OneAPM.com
+ ******************************************************************************/
 + (void)startWithApplicationToken:(NSString *)token;
 
 /******************************************************************************
@@ -49,7 +49,6 @@
  ******************************************************************************/
 + (void)disableZLib;
 
-
 /******************************************************************************
  * Function: + (void)printLog:(BOOL)enable
  * Parameters:
@@ -72,5 +71,7 @@
  * Call this after startWithApplicationToken.
  ******************************************************************************/
 + (void)setCustomInfo:(NSString *)info;
+
++ (void)setCustomInfo:(NSString *)info withExtra:(NSDictionary *)extra;
 
 @end
