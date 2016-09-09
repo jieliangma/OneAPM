@@ -31,12 +31,6 @@
                      withSecurity:(BOOL)isSSL;
 
 /*******************************************************************************
- * Function: + (void)setHost:(NSString *)host
- * Parameters:
- ******************************************************************************/
-+ (void)setHost:(NSString *)host;
-
-/*******************************************************************************
  * Function: + (void)setAppPublishChannel:(NSString *)channel;
  * Parameters:
  ******************************************************************************/
@@ -63,7 +57,7 @@
  * Crash report is enabled by default.
  * Call this before startWithApplicationToken to disable.
  ******************************************************************************/
-+ (void)disableCrashReport;
++ (void)disableCrashReport __attribute__((deprecated));
 
 /******************************************************************************
  * Function: + (void)setCustomInfo:(NSString *)info
@@ -73,5 +67,13 @@
 + (void)setCustomInfo:(NSString *)info;
 
 + (void)setCustomInfo:(NSString *)info withExtra:(NSDictionary *)extra;
+
+#pragma mark - Enterprise Only
+
+/*******************************************************************************
+ * Function: + (void)setHost:(NSString *)host
+ * Parameters:
+ ******************************************************************************/
++ (void)setHost:(NSString *)host;
 
 @end
