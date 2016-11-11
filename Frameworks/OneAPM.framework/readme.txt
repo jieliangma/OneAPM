@@ -1,6 +1,6 @@
 OneAPM iOS SDK Release Note 
 
-当前版本 V2.2.4.1
+当前版本 V2.2.4.1(1)
    交互功能优化;
    bug修复;-------------------------------------------------------------------------
 历史Release Note: http://www.oneapm.com/docs/mi/ios.html
