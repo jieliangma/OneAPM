@@ -73,6 +73,8 @@
 /*******************************************************************************
  * Function: + (void)setHost:(NSString *)host
  * Parameters:
+ *  host: The host and port of OneAPM Server
+ * Call this before startWithApplicationToken.
  ******************************************************************************/
 + (void)setHost:(NSString *)host;
 
