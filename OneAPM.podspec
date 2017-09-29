@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
 s.name             = "OneAPM"
-s.version          = "2.2.5.0"
+s.version          = "2.2.5.2"
 s.summary          = "OneAPM Analytics SDK for iOS."
 s.description      = <<-DESC
 						OneAPM library for iOS, Supports iPhone Simulator (i386), armv7, armv7s.
