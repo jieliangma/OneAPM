@@ -33,7 +33,7 @@ OneAPM is available through [CocoaPods](http://cocoapods.org). To install
 it, simply add the following line to your Podfile:
 
 ```ruby
-pod "OneAPM"
+pod 'OneAPM', '~> 2.2.5.6'
 ```
 
 ## License
