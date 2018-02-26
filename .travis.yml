@@ -11,6 +11,6 @@ before_install:
 - pod install --project-directory=Example
 script:
 - set -e
-- set -o pipefail && xcodebuild test -workspace Example/OneAPM.xcworkspace -scheme OneAPM-Example -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO | xcpretty
+- set -o pipefail && xcodebuild test -workspace Example/OneAPM.xcworkspace -scheme OneAPM-Example -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO -destination 'platform=iOS Simulator,name=iPhone 6,OS=9.0' | xcpretty
 - pod lib lint
 - set +e
